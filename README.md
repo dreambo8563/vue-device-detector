@@ -1,5 +1,7 @@
 # vue-device-detector
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dreambo8563/vue-DeviceDetector.svg)](https://greenkeeper.io/)
+
 ## Project setup
 ```
 npm install
