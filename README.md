@@ -4,6 +4,9 @@
 [![Build Status](https://travis-ci.com/dreambo8563/vue-DeviceDetector.svg?branch=master)](https://travis-ci.com/dreambo8563/vue-DeviceDetector)
 [![Greenkeeper badge](https://badges.greenkeeper.io/dreambo8563/vue-DeviceDetector.svg)](https://greenkeeper.io/)
 [![Known Vulnerabilities](https://snyk.io/test/github/dreambo8563/vue-DeviceDetector/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dreambo8563/vue-DeviceDetector?targetFile=package.json)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![npm type definitions](https://img.shields.io/npm/types/vue-device-detector.svg?style=flat)
+![npm](https://img.shields.io/npm/dt/vue-device-detector.svg?style=flat)
 
 ## Project setup
 
