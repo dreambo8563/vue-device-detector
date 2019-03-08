@@ -1,14 +1,30 @@
 {
   "name": "vue-device-detector",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "dreambo8563",
+  "main": "dist/vue-device-detector.umd.min.js",
+  "license": "MIT",
+  "typings": "types/main.d.ts",
+  "description": "A tiny device detector plugin of vue for mobile",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-bundle": "npm run lint && vue-cli-service build --target lib --name vue-device-detector ./src/main.ts",
+    "report": "npm run lint && vue-cli-service build --report --target lib --name vue-device-detector ./src/main.ts",
+    "test": "npm run build-bundle",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
     "vue": "^2.6.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dreambo8563/vue-DeviceDetector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dreambo8563/vue-DeviceDetector/issues"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
@@ -21,6 +37,12 @@
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "typescript": "~3.2.2",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
