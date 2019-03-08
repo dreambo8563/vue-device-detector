@@ -5,38 +5,54 @@ import Vue, { VueConstructor } from "vue";
 const userAgent = window.navigator.userAgent.toLowerCase();
 const devicePixelRatio = window.devicePixelRatio || 1;
 class DeviceDetector {
-  windows = this.find("windows");
-  ipod = this.find("ipod");
-  ipad = this.find("ipad");
-  iphone = !this.windows && this.find("iphone");
+  windows: Boolean;
+  ipod: Boolean;
+  ipad: Boolean;
+  iphone: Boolean;
 
-  iphoneX =
-    this.iphone &&
-    devicePixelRatio === 3 &&
-    window.screen.width === 375 &&
-    window.screen.height === 812;
-  iPhoneXR =
-    this.iphone &&
-    devicePixelRatio === 2 &&
-    window.screen.width === 414 &&
-    window.screen.height === 896;
-  iPhoneXSMax =
-    this.iphone &&
-    devicePixelRatio === 3 &&
-    window.screen.width === 414 &&
-    window.screen.height === 896;
+  iphoneX: Boolean;
+  iPhoneXR: Boolean;
+  iPhoneXSMax: Boolean;
 
-  ios = this.iphone || this.ipod || this.ipad;
-  android = !this.windows && this.find("android");
-  androidPhone = this.android && this.find("mobile");
-  mobile = this.androidPhone || this.iphone || this.ipod;
+  ios: Boolean;
+  android: Boolean;
+  androidPhone: Boolean;
+  mobile: Boolean;
+  constructor() {
+    this.windows = this.find("windows");
+    this.ipod = this.find("ipod");
+    this.ipad = this.find("ipad");
+    this.iphone = !this.windows && this.find("iphone");
+    this.iphoneX =
+      this.iphone &&
+      devicePixelRatio === 3 &&
+      window.screen.width === 375 &&
+      window.screen.height === 812;
+
+    this.iPhoneXR =
+      this.iphone &&
+      devicePixelRatio === 2 &&
+      window.screen.width === 414 &&
+      window.screen.height === 896;
+
+    this.iPhoneXSMax =
+      this.iphone &&
+      devicePixelRatio === 3 &&
+      window.screen.width === 414 &&
+      window.screen.height === 896;
+
+    this.ios = this.iphone || this.ipod || this.ipad;
+    this.android = !this.windows && this.find("android");
+    this.androidPhone = this.android && this.find("mobile");
+    this.mobile = this.androidPhone || this.iphone || this.ipod;
+  }
 
   private find(needle: string) {
     return userAgent.indexOf(needle) !== -1;
   }
 }
 
-export interface IDeviceDetector {
+interface IDeviceDetector {
   ios: Boolean;
   iphone: Boolean;
   iphoneX: Boolean;
@@ -49,9 +65,11 @@ export interface IDeviceDetector {
   windows: Boolean;
   mobile: Boolean;
 }
-
+export type deviceDetectorPlugin = {
+  install(vue: VueConstructor<Vue>, options?: any): void;
+};
 const instantce: deviceDetectorPlugin = {
-  install(vue) {
+  install(vue, options) {
     let alias = "$device";
     const deviceDetector = new DeviceDetector() as IDeviceDetector;
     vue.prototype[alias] = deviceDetector;
@@ -62,7 +80,6 @@ const instantce: deviceDetectorPlugin = {
     });
   }
 };
-export type deviceDetectorPlugin = {
-  install(vue: VueConstructor<Vue>, options?: object): void;
-};
+
 export default instantce;
+export { IDeviceDetector };

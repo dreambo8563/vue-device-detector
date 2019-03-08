@@ -1,5 +1,5 @@
 import Vue, { VueConstructor } from "./vue";
-export interface IDeviceDetector {
+interface IDeviceDetector {
   ios: Boolean;
   iphone: Boolean;
   iphoneX: Boolean;
@@ -12,8 +12,9 @@ export interface IDeviceDetector {
   windows: Boolean;
   mobile: Boolean;
 }
-declare const instantce: deviceDetectorPlugin;
 export declare type deviceDetectorPlugin = {
-  install(vue: VueConstructor<Vue>, options?: object): void;
+  install(vue: VueConstructor<Vue>, options?: any): void;
 };
+declare const instantce: deviceDetectorPlugin;
 export default instantce;
+export { IDeviceDetector };
