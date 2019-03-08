@@ -11,42 +11,64 @@
 
 ![](https://raw.githubusercontent.com/dreambo8563/static-assets/master/watcher2.png)
 
-## Project setup
+**vue-device-detector** is a simple vue plugin to inspect the device type.
 
-```
-npm install
-```
+- focus on mobile
+- vue friendly
+- strong typed
 
-### Compiles and hot-reloads for development
+TODO:
 
-```
-npm run serve
-```
+- [ ] add dingding api
+- [ ] add weixin api
 
-### Compiles and minifies for production
+### Install
 
-```
-npm run build
-```
-
-### Run your tests
-
-```
-npm run test
+```cmd
+npm install vue-device-detector --save
 ```
 
-### Lints and fixes files
+### Quick Start
 
+```js
+import device from "vue-device-detector"
+Vue.use(device)
 ```
-npm run lint
+
+### Methods
+
+- this.\$device in Component context.
+- Vue.\$device in global.
+
+### API list
+
+you can get the following properties under this.\$device
+
+```ts
+interface IDeviceDetector {
+  ios: Boolean
+  iphone: Boolean
+  iphoneX: Boolean
+  iPhoneXR: Boolean
+  iPhoneXSMax: Boolean
+  ipod: Boolean
+  ipad: Boolean
+  android: Boolean
+  androidPhone: Boolean
+  windows: Boolean
+  mobile: Boolean
+}
 ```
 
-### Customize configuration
+eg.
+on iphoneX
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-# vue-DeviceDetector
-
+```js
+console.log(this.$device.iphoneX) // true
+console.log(this.$device.ios) // true
+console.log(this.$device.android) // false
+```
 
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-DeviceDetector.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-DeviceDetector?ref=badge_large)
