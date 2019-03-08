@@ -14,6 +14,6 @@ export interface IDeviceDetector {
 }
 declare const instantce: deviceDetectorPlugin;
 export declare type deviceDetectorPlugin = {
-  install(vue: VueConstructor<Vue>): void;
+  install(vue: VueConstructor<Vue>, options?: object): void;
 };
 export default instantce;

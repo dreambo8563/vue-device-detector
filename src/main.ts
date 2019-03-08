@@ -63,6 +63,6 @@ const instantce: deviceDetectorPlugin = {
   }
 };
 export type deviceDetectorPlugin = {
-  install(vue: VueConstructor<Vue>): void;
+  install(vue: VueConstructor<Vue>, options?: object): void;
 };
 export default instantce;
