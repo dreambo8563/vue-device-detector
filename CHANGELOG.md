@@ -1,5 +1,16 @@
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/dreambo8563/vue-DeviceDetector/compare/v0.1.1...v0.1.8) (2019-03-08)
+
+
+### Bug Fixes
+
+* **typings:** fix typings ([02b42c7](https://github.com/dreambo8563/vue-DeviceDetector/commit/02b42c7))
+* **typings:** plugin install ([f784db1](https://github.com/dreambo8563/vue-DeviceDetector/commit/f784db1))
+
+
+
 <a name="0.1.1"></a>
-## 0.1.1 (2019-03-08)
+## [0.1.1](https://github.com/dreambo8563/vue-DeviceDetector/compare/caeb361...v0.1.1) (2019-03-08)
 
 
 ### Features
