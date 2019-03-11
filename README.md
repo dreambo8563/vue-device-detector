@@ -20,8 +20,8 @@
 
 TODO:
 
-- [ ] add dingding api
-- [ ] add weixin api
+- [x] add dingding api
+- [x] add weixin api
 
 ### Install
 
@@ -58,6 +58,8 @@ interface IDeviceDetector {
   androidPhone: Boolean
   windows: Boolean
   mobile: Boolean
+  dingding: Boolean //钉钉
+  wechat: Boolean // 微信
 }
 ```
 
@@ -82,6 +84,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
 <!-- prettier-ignore -->
 | [<img src="https://avatars2.githubusercontent.com/u/6948318?v=4" width="100px;" alt="Vincent Guo"/><br /><sub><b>Vincent Guo</b></sub>](https://dreambo8563.github.io/)<br />[💻](https://github.com/dreambo8563/vue-DeviceDetector/commits?author=dreambo8563 "Code") [📖](https://github.com/dreambo8563/vue-DeviceDetector/commits?author=dreambo8563 "Documentation") [🚇](#infra-dreambo8563 "Infrastructure (Hosting, Build-Tools, etc)") |
 | :---: |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
