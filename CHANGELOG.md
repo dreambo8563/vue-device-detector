@@ -1,3 +1,13 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.0.0...v1.1.0) (2019-03-11)
+
+
+### Features
+
+* **wechat:** add wechat ([b0c7e28](https://github.com/dreambo8563/vue-DeviceDetector/commit/b0c7e28))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/dreambo8563/vue-DeviceDetector/compare/v0.1.8...v1.0.0) (2019-03-11)
 
