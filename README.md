@@ -58,6 +58,8 @@ interface IDeviceDetector {
   androidPhone: Boolean
   windows: Boolean
   mobile: Boolean
+  dingding: Boolean //钉钉
+  wechat: Boolean // 微信
 }
 ```
 
