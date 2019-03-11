@@ -24,7 +24,7 @@ class DeviceDetector {
     this.windows = this.find("windows");
     this.ipod = this.find("ipod");
     this.ipad = this.find("ipad");
-    this.dingding = this.find("DingTalk");
+    this.dingding = this.find("dingtalk");
     this.wechat = this.find("micromessenger");
     this.iphone = !this.windows && this.find("iphone");
     this.iphoneX =
