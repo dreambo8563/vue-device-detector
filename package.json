@@ -1,6 +1,6 @@
 {
   "name": "vue-device-detector",
-  "version": "0.1.8",
+  "version": "1.0.0",
   "private": false,
   "author": "dreambo8563",
   "main": "dist/vue-device-detector.umd.min.js",
