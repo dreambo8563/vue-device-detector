@@ -18,10 +18,12 @@ class DeviceDetector {
   android: Boolean;
   androidPhone: Boolean;
   mobile: Boolean;
+  dingding: Boolean;
   constructor() {
     this.windows = this.find("windows");
     this.ipod = this.find("ipod");
     this.ipad = this.find("ipad");
+    this.dingding = this.find("DingTalk");
     this.iphone = !this.windows && this.find("iphone");
     this.iphoneX =
       this.iphone &&
@@ -64,6 +66,7 @@ interface IDeviceDetector {
   androidPhone: Boolean;
   windows: Boolean;
   mobile: Boolean;
+  dingding: Boolean;
 }
 export type deviceDetectorPlugin = {
   install(vue: VueConstructor<Vue>, options?: any): void;
