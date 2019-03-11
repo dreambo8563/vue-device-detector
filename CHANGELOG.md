@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.1.0...v1.1.1) (2019-03-11)
+
+
+### Bug Fixes
+
+* **dingtalk:** match lower case ([e2a2fb4](https://github.com/dreambo8563/vue-DeviceDetector/commit/e2a2fb4))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.0.0...v1.1.0) (2019-03-11)
 
