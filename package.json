@@ -48,6 +48,12 @@
     "*.js",
     "README.md"
   ],
+  "keywords": [
+    "vue",
+    "device",
+    "mobile",
+    "useragent"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
