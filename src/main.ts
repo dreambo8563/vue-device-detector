@@ -52,7 +52,7 @@ class DeviceDetector {
   }
 
   private find(needle: string) {
-    return userAgent.indexOf(needle) !== -1;
+    return userAgent.includes(needle);
   }
 }
 
