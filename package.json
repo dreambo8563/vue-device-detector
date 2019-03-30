@@ -34,7 +34,7 @@
     "@vue/eslint-config-prettier": "^4.0.1",
     "@vue/eslint-config-typescript": "^4.0.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
+    "eslint": "5.15.3",
     "eslint-plugin-vue": "^5.0.0",
     "typescript": "~3.3.3333",
     "vue-template-compiler": "^2.5.21",
