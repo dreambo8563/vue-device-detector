@@ -76,7 +76,7 @@ export type deviceDetectorPlugin = {
 };
 const instantce: deviceDetectorPlugin = {
   install(vue, options) {
-    let alias = "$device";
+    const alias = "$device";
     const deviceDetector = new DeviceDetector() as IDeviceDetector;
     vue.prototype[alias] = deviceDetector;
     Object.defineProperty(Vue, `${alias}`, {
