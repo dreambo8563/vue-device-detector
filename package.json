@@ -1,6 +1,6 @@
 {
   "name": "vue-device-detector",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "private": false,
   "author": "dreambo8563",
   "main": "dist/vue-device-detector.umd.min.js",
@@ -27,18 +27,18 @@
     "url": "https://github.com/dreambo8563/vue-DeviceDetector/issues"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.7.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-plugin-typescript": "^3.4.0",
-    "@vue/cli-service": "^3.7.0",
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-plugin-typescript": "^3.8.1",
+    "@vue/cli-service": "^3.8.0",
     "@vue/eslint-config-prettier": "^4.0.1",
     "@vue/eslint-config-typescript": "^4.0.0",
     "babel-eslint": "^10.0.1",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "typescript": "~3.3.3333",
-    "vue-template-compiler": "^2.5.21",
-    "cz-conventional-changelog": "^2.1.0"
+    "vue-template-compiler": "^2.5.21"
   },
   "files": [
     "dist/*",
@@ -47,6 +47,12 @@
     "package.json",
     "*.js",
     "README.md"
+  ],
+  "keywords": [
+    "vue",
+    "device",
+    "mobile",
+    "useragent"
   ],
   "config": {
     "commitizen": {
