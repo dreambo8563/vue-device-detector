@@ -27,7 +27,7 @@
     "url": "https://github.com/dreambo8563/vue-DeviceDetector/issues"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-babel": "^4.4.1",
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-plugin-typescript": "^3.8.1",
     "@vue/cli-service": "^3.8.0",
