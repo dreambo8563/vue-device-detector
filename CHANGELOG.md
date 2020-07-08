@@ -1,3 +1,13 @@
+<a name="1.1.5"></a>
+## [1.1.5](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.1.4...v1.1.5) (2020-07-08)
+
+
+### Features
+
+* **miniapp:** add wechat miniapp ([535931d](https://github.com/dreambo8563/vue-DeviceDetector/commit/535931d))
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.1.3...v1.1.4) (2020-07-08)
 
