@@ -13,6 +13,7 @@ interface IDeviceDetector {
   mobile: Boolean;
   dingding: Boolean;
   wechat: Boolean;
+  wechatMiniApp: boolean;
 }
 export declare type deviceDetectorPlugin = {
   install(vue: VueConstructor<Vue>, options?: any): void;

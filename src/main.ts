@@ -20,12 +20,14 @@ class DeviceDetector {
   mobile: Boolean;
   dingding: Boolean;
   wechat: Boolean;
+  wechatMiniApp: boolean;
   constructor() {
     this.windows = this.find("windows");
     this.ipod = this.find("ipod");
     this.ipad = this.find("ipad");
     this.dingding = this.find("dingtalk");
     this.wechat = this.find("micromessenger");
+    this.wechatMiniApp = this.find("miniprogram");
     this.iphone = !this.windows && this.find("iphone");
     this.iphoneX =
       this.iphone &&
@@ -70,6 +72,7 @@ interface IDeviceDetector {
   mobile: Boolean;
   dingding: Boolean;
   wechat: Boolean;
+  wechatMiniApp: boolean;
 }
 export type deviceDetectorPlugin = {
   install(vue: VueConstructor<Vue>, options?: any): void;
