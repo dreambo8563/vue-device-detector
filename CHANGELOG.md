@@ -1,10 +1,15 @@
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.1.3...v1.1.4) (2020-07-08)
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.1.2...v1.1.3) (2019-05-28)
 
 
 
 <a name="1.1.2"></a>
-## [1.1.2](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.1.0...v1.1.2) (2019-03-14)
+## [1.1.2](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.1.1...v1.1.2) (2019-03-14)
 
 
 ### Bug Fixes
@@ -24,7 +29,7 @@
 
 
 <a name="1.0.0"></a>
-# [1.0.0](https://github.com/dreambo8563/vue-DeviceDetector/compare/v0.1.1...v1.0.0) (2019-03-11)
+# [1.0.0](https://github.com/dreambo8563/vue-DeviceDetector/compare/v0.1.8...v1.0.0) (2019-03-11)
 
 
 ### Bug Fixes
