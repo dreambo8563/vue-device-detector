@@ -1,12 +1,9 @@
 {
   "name": "vue-device-detector",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "private": false,
-  "author": "dreambo8563",
-  "main": "dist/vue-device-detector.umd.min.js",
-  "license": "MIT",
-  "typings": "types/main.d.ts",
   "description": "A tiny device detector plugin of vue for mobile",
+  "author": "dreambo8563",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -16,30 +13,7 @@
     "test": "npm run build-bundle",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
-  "dependencies": {
-    "vue": "^2.5.22"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dreambo8563/vue-DeviceDetector.git"
-  },
-  "bugs": {
-    "url": "https://github.com/dreambo8563/vue-DeviceDetector/issues"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-plugin-eslint": "^3.8.0",
-    "@vue/cli-plugin-typescript": "^3.8.1",
-    "@vue/cli-service": "^3.8.0",
-    "@vue/eslint-config-prettier": "^4.0.1",
-    "@vue/eslint-config-typescript": "^4.0.0",
-    "babel-eslint": "^10.0.1",
-    "cz-conventional-changelog": "^3.0.0",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "typescript": "~3.3.3333",
-    "vue-template-compiler": "^2.5.21"
-  },
+  "main": "dist/vue-device-detector.umd.min.js",
   "files": [
     "dist/*",
     "src/*",
@@ -48,15 +22,47 @@
     "*.js",
     "README.md"
   ],
+  "dependencies": {
+    "commitizen": "^4.1.2",
+    "core-js": "^3.6.5",
+    "vue": "^2.5.22"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-eslint": "^4.4.6",
+    "@vue/cli-plugin-typescript": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "babel-eslint": "^10.0.1",
+    "cz-conventional-changelog": "^3.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^1.19.1",
+    "typescript": "~3.9.3",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "bugs": {
+    "url": "https://github.com/dreambo8563/vue-DeviceDetector/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "keywords": [
     "vue",
     "device",
     "mobile",
     "useragent"
   ],
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dreambo8563/vue-DeviceDetector.git"
+  },
+  "typings": "types/main.d.ts"
 }
