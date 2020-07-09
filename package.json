@@ -11,7 +11,9 @@
     "build-bundle": "npm run lint && vue-cli-service build --target lib --name vue-device-detector ./src/main.ts",
     "report": "npm run lint && vue-cli-service build --report --target lib --name vue-device-detector ./src/main.ts",
     "test": "npm run build-bundle",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "main": "dist/vue-device-detector.umd.min.js",
   "files": [
@@ -25,7 +27,8 @@
   "dependencies": {
     "commitizen": "^4.1.2",
     "core-js": "^3.6.5",
-    "vue": "^2.5.22"
+    "vue": "^2.5.22",
+    "snyk": "^1.360.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
@@ -64,5 +67,6 @@
     "type": "git",
     "url": "https://github.com/dreambo8563/vue-DeviceDetector.git"
   },
-  "typings": "types/main.d.ts"
+  "typings": "types/main.d.ts",
+  "snyk": true
 }
