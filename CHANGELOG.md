@@ -1,3 +1,15 @@
+<a name="1.1.6"></a>
+## [1.1.6](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.1.5...v1.1.6) (2020-10-16)
+
+
+### Bug Fixes
+
+* **ipad detect:** change way to detect ipad ([1352877](https://github.com/dreambo8563/vue-DeviceDetector/commit/1352877))
+* package.json & package-lock.json to reduce vulnerabilities ([c074872](https://github.com/dreambo8563/vue-DeviceDetector/commit/c074872))
+* package.json, package-lock.json & .snyk to reduce vulnerabilities ([5a9ccee](https://github.com/dreambo8563/vue-DeviceDetector/commit/5a9ccee))
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/dreambo8563/vue-DeviceDetector/compare/v1.1.4...v1.1.5) (2020-07-08)
 
