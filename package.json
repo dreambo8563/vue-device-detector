@@ -1,6 +1,6 @@
 {
   "name": "vue-device-detector",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "private": false,
   "description": "A tiny device detector plugin of vue for mobile",
   "author": "dreambo8563",
