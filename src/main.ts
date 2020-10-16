@@ -4,6 +4,9 @@ import Vue, { VueConstructor } from "vue";
 // Lowercase, so we can use the more efficient indexOf(), instead of Regex
 const userAgent = window.navigator.userAgent.toLowerCase();
 const devicePixelRatio = window.devicePixelRatio || 1;
+const iPadOS13Up =
+  window.navigator.platform === "MacIntel" &&
+  window.navigator.maxTouchPoints > 1;
 class DeviceDetector {
   windows: Boolean;
   ipod: Boolean;
@@ -24,7 +27,7 @@ class DeviceDetector {
   constructor() {
     this.windows = this.find("windows");
     this.ipod = this.find("ipod");
-    this.ipad = this.find("ipad");
+    this.ipad = this.find("ipad") || iPadOS13Up;
     this.dingding = this.find("dingtalk");
     this.wechat = this.find("micromessenger");
     this.wechatMiniApp = this.find("miniprogram");
