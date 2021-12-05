@@ -8,7 +8,7 @@
 ![npm](https://img.shields.io/npm/dt/vue-device-detector.svg?style=flat)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-DeviceDetector.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-DeviceDetector?ref=badge_shield)
 
-# vue-device-detector
+# vue-device-detector ([for Vue 3](https://github.com/dreambo8563/next-vue-device-detector))
 
 ![](https://raw.githubusercontent.com/dreambo8563/static-assets/master/watcher2.png)
 
