@@ -27,7 +27,7 @@
   "dependencies": {
     "commitizen": "^4.1.3",
     "core-js": "^3.6.5",
-    "snyk": "^1.360.0",
+    "snyk": "^1.685.0",
     "vue": "^2.5.22"
   },
   "devDependencies": {
