@@ -25,12 +25,12 @@
     "README.md"
   ],
   "dependencies": {
-    "commitizen": "^4.1.3",
     "core-js": "^3.6.5",
-    "snyk": "^1.360.0",
     "vue": "^2.5.22"
   },
   "devDependencies": {
+    "commitizen": "^4.1.3",
+    "snyk": "^1.360.0",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "^4.5.7",
